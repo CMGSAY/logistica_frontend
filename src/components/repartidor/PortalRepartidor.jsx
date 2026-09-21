@@ -23,6 +23,7 @@ export default function PortalRepartidor() {
 
   useEffect(() => {
     cargarRutaAsignada();
+    // eslint-disable-next-line
   }, []);
 
   const cargarRutaAsignada = async () => {

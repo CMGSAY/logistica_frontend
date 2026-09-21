@@ -24,6 +24,7 @@ export default function CotizadorCliente() {
 
   useEffect(() => {
     cargarDatos();
+    // eslint-disable-next-line
   }, []);
 
   const cargarDatos = async () => {
