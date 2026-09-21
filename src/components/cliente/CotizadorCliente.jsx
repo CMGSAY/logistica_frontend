@@ -25,6 +25,7 @@ export default function CotizadorCliente() {
   useEffect(() => {
     cargarDatos();
     // eslint-disable-next-line
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const cargarDatos = async () => {
@@ -72,7 +73,7 @@ export default function CotizadorCliente() {
         estado_actual: 'CREADO'
       };
       const resEnvio = await api.post('/envios', payloadEnvio);
-      const envioNuevoId = resEnvio.data.insertId;
+      const envioNuevoId = resEnvio.data.id;
 
       // 2. Crear el Paquete asociado al Envío
       const payloadPaquete = {
