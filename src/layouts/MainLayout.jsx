@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Outlet, useNavigate, useLocation } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
-import { Box, LogOut, LayoutDashboard, Users, Truck, Map, FileText, Settings, Navigation, AlertTriangle, Wallet, Building2, Route, Briefcase, UserCheck, Package } from 'lucide-react';
+import { Box, LogOut, LayoutDashboard, Users, Truck, Map, Navigation, AlertTriangle, Wallet, Building2, Route, Briefcase, UserCheck, Package } from 'lucide-react';
 import '../index.css';
 
 export default function MainLayout() {

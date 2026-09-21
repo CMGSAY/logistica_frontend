@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Users, Truck, Package, Activity, Map, ArrowUpRight, ArrowDownRight } from 'lucide-react';
+import { Users, Truck, Package, Activity, Map } from 'lucide-react';
 import api from '../../services/api';
 
 export default function DashboardAdmin() {
