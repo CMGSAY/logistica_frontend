@@ -21,3 +21,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Excluir el backend y scripts temporales de refactorización
+/proyecto_logistica
+refactor_mvc.js
