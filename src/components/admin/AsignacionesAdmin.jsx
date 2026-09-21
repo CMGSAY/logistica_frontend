@@ -34,7 +34,7 @@ export default function AsignacionesAdmin() {
   const cargarDatos = async () => {
     try {
       const [resAsig, resCond, resVeh, resRut, resUsr, resAlm] = await Promise.all([
-        api.get('/asignaciones_ruta'),
+        api.get('/asignaciones'),
         api.get('/conductores'),
         api.get('/vehiculos'),
         api.get('/rutas'),
@@ -97,9 +97,9 @@ export default function AsignacionesAdmin() {
     e.preventDefault();
     try {
       if (editandoId) {
-        await api.put(`/asignaciones_ruta/${editandoId}`, formData);
+        await api.put(`/asignaciones/${editandoId}`, formData);
       } else {
-        await api.post('/asignaciones_ruta', formData);
+        await api.post('/asignaciones', formData);
       }
       handleCloseModal();
       cargarDatos();
@@ -112,7 +112,7 @@ export default function AsignacionesAdmin() {
   const handleEliminar = async (id) => {
     if (window.confirm('¿Estás seguro de que deseas cancelar/eliminar esta asignación?')) {
       try {
-        await api.delete(`/asignaciones_ruta/${id}`);
+        await api.delete(`/asignaciones/${id}`);
         cargarDatos();
       } catch (error) {
         console.error("Error al eliminar", error);

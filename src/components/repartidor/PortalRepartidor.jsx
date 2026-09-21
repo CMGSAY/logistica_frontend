@@ -32,7 +32,7 @@ export default function PortalRepartidor() {
       const miConductor = resCond.data.find(c => c.usuario_id === user.id);
       
       if (miConductor) {
-        const resAsig = await api.get('/asignaciones_ruta');
+        const resAsig = await api.get('/asignaciones');
         const asignacion = resAsig.data.find(a => a.conductor_id === miConductor.id);
         
         if (asignacion) {

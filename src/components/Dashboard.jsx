@@ -7,7 +7,7 @@ const socket = io(backendUrl);
 const TABLAS = [
   'usuarios', 'roles', 'clientes', 'conductores', 'vehiculos', 
   'almacenes', 'zonas_cobertura', 'tarifas', 'tipos_empaque', 'direcciones', 
-  'paquetes', 'envios', 'rutas', 'asignaciones_ruta', 'checkpoints', 
+  'paquetes', 'envios', 'rutas', 'asignaciones', 'checkpoints', 
   'metodos_pago', 'facturas', 'pagos', 'incidencias', 'mantenimientos', 
   'logs_sistema', 'auditoria_acciones'
 ];
