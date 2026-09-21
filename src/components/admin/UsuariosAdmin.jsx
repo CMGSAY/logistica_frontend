@@ -19,6 +19,7 @@ export default function UsuariosAdmin() {
 
   useEffect(() => {
     cargarUsuarios();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const cargarUsuarios = async () => {
